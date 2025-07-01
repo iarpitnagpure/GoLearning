@@ -9,7 +9,7 @@ func setNum(num int) {
 }
 
 // num recived in argument with *int will be the memory address, If we change value of that memory address it will change globally
-// Append "*" to access the memory address value
+// Append "*" (Deference operator) to access the memory address value
 func setNumWithPointer(num *int) {
 	*num = 5
 	fmt.Println("This is memory address of num", num) // "num" ---> 0xc00000a0d8
