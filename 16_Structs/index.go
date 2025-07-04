@@ -47,6 +47,9 @@ func main() {
 	fmt.Println("newOrder access only id direcly", newOrder.id)                   // "id" ---> 1
 	fmt.Println("newOrder access only amount using method", newOrder.getAmount()) // "Amount" ---> 10
 
+	newOrder.id = "2"
+	fmt.Println("chnage newOrder id directly", newOrder.id) // "id" ---> 2
+
 	// Shorthand syntax
 	car := struct {
 		model  string
